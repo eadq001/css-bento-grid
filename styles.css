@@ -107,6 +107,11 @@ img {
     gap: 1rem;
     padding: 1rem;
     overflow: hidden;
+
+    img {
+        width: 100%;
+        margin-bottom: -85px;
+    }
 }
 .schedule {
     background-color: var(--primary-subdued);
