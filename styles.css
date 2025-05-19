@@ -24,7 +24,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     padding: 2rem;
-    background-color: black;
+    background-color: var(--off-white);
     height: 100vh;
 }
 
@@ -138,6 +138,8 @@ img {
         width: 50%;
     }
 }
+
+
 .follower {
     background-color: var(--primary-base);
     place-content: center;
@@ -207,7 +209,7 @@ img {
     grid-area: column3;
 }
 .column-four {
-    /* display: grid; */
+    display: grid;
     grid-template-columns: .95fr 2fr;
     grid-area: column4;
 }
@@ -216,7 +218,7 @@ img {
     .bento-grid {
         display: grid;
         grid-template-columns: 1fr  1fr;
-        grid-template-rows:repeat(4, 13rem);
+        /* grid-template-rows:repeat(4, 13rem); */
         grid-template-areas: 
         "column2 column3"
         "column2 column3"
@@ -227,12 +229,23 @@ img {
     .column-one {
         grid-template-columns: 1fr 1fr;
     }
+
+    .schedule img {
+        width: 100%;
+    }
+
+    .maintain img {
+        margin-bottom: -25px;
+    }
+
+  
 }
 
 @media (max-width:600px) {
     .bento-grid {
         display: grid;
         grid-template-columns: 1fr;
+        /* grid-template-rows:13rem 13rem 13rem; */
         grid-template-areas: 
         "column2"
         "column3"
@@ -242,5 +255,9 @@ img {
 
     .column-one, .inside-element, .column-four {
         grid-template-columns: 1fr;
-    }    
+    }
+    
+    .schedule img {
+        width: 100%;
+    }
 }
